@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>3.5 - An Applet With Scrollbar</title>
+	</head>
+	<body>
+		<p align="center"><font color="red"><b><u>3.5 - An Applet With Scrollbar</u></b></font></p>
+
+		<p>1) The Scrollbar class is located in the java.awt package</br>
+		<code>"The Scrollbar class embodies a scroll bar, a familiar user-interface object. A scroll bar provides 
+		a convenient means for allowing a user to select from a range of values."</code></br>
+		
+		<p>2)some contructors are:</br>
+<pre>
+Scrollbar()
+          Constructs a new vertical scroll bar.
+Scrollbar(int orientation)
+          Constructs a new scroll bar with the specified orientation.
+Scrollbar(int orientation, int value, int visible, int minimum, int maximum)
+          Constructs a new scroll bar with the specified orientation, initial value, visible amount, and minimum and maximum values.
+</pre></br>
+possible ways to declare are: (as used in applet)</br>
+<pre>
+Scrollbar ranger = new Scrollbar(Scrollbar.HORIZONTAL, 0, 60, 0, 100);
+	add(ranger);
+	
+Scrollbar redSlider=new Scrollbar(Scrollbar.VERTICAL, 10, 0, 0, 100);
+	add(redSlider);
+</pre>
+	</p>
+		<a href="http://java.sun.com/javase/7/docs/api/java/awt/Scrollbar.html">more info</a></p>
+
+		<table border="1">
+			<tr>
+				<td>
+					<p align="center">
+						<font color="red"><b><u>APPLET</u></b></font></br></br>
+						<applet code="Lab3_5.class" width="500" height="200"></applet>
+					</p>
+				</td>
+			</tr>
+		</table>
+	</body
+</html>

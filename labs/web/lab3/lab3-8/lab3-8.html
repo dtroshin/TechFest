@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>3.8 - An Applet With Mouse Motion</title>
+	</head>
+	<body>
+		<p align="center"><font color="red"><b><u>3.8 - An Applet With Mouse Motion</u></b></font></p>
+
+		<p>1) implements MouseListener -> used when clicks are looked at </br><pre>	public void init() {        addMouseListener(this);		}	public void mouseClicked(MouseEvent e) {        String clickDesc;        if (e.getClickCount() == 2)            clickDesc = "double";}</pre></p>
+		<p>2) implements MouseMotionListener -> used when location is looked at or dragged</br><pre>	public void init() {        addMouseMotionListener(this);		}    public void mouseDragged(MouseEvent e) {        System.out.println("mouse is being dragged at location (" + e.getX() + ", " + e.getY() + ")");    }</pre></p>		<p>3) implements MouseWheelListener -> Invoked when the mouse wheel is rotated.</br><pre>	public void mouseWheelMoved(MouseWheelEvent e){}</pre></p>
+		<a href="http://java.sun.com/j2se/1.5.0/docs/api/java/awt/event/package-frame.html">more info</a></p>
+		<table border="1">
+			<tr>
+				<td>
+					<p align="center">
+						<font color="red"><b><u>APPLET</u></b></font></br></br>
+						<applet code="Lab3_8.class" width="300" height="300"></applet>
+					</p>
+				</td>
+			</tr>
+		</table>
+	</body
+</html>

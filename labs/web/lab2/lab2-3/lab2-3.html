@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>2.3 - An Applet With Parms</title>
+	</head>
+	<body>
+		<p align="center"><font color="red"><b><u>2.3 - An Applet With Parms</u></b></font></p>
+
+		<p>1) The getParameterInfo() method returns information about the parameters that are understood by this applet.</br>
+			  Each element of the array should be a set of three Strings containing the name, the type, and a description.</br></br>
+			  
+			<pre>
+				String pinfo[][] = {
+				{"fps",    "1-10",    "frames per second"},
+				{"repeat", "boolean", "repeat image loop"},
+				{"imgs",   "url",     "images directory"}
+				};
+			</pre>
+		</p>
+
+		<p>2) The Integer wrapper class is located in the java.lang package.</br>
+			&nbsp;&nbsp;&nbsp;&nbsp; other wrapper classes include
+				<ul>
+					<li>Float</li>
+					<li>Double</li>
+					<li>Long</li>
+					<li>plus many more</li>
+				</ul>
+		</p>
+		
+		<p align="center">
+			<font color="red"><b><u>APPLET</u></b></font></br></br>
+			<table align="center" border="1">
+				<tr>
+					<td align="center" width="150">
+						value is 1
+						<applet code="Lab2_3.class" width="100" height="100">
+							<param name="number" value="1">
+						</applet>
+					</td>
+					<td align="center" width="150">
+						value is 2
+						<applet code="Lab2_3.class" width="100" height="100">
+							<param name="number" value="2">
+						</applet>
+					</td>
+					<td align="center" width="150">
+						value is 5 (calls else)
+						<applet code="Lab2_3.class" width="100" height="100">
+							<param name="number" value="5">
+						</applet>
+					</td>
+				</tr>
+			</table>
+		</p>
+	</body>
+</html>

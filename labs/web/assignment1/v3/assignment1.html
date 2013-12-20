@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>Assignment #1</title>
+	</head>
+	<body>
+		<p align="center"><font color="red"><b><u>Assignment #1</u></b></font></p>
+		<table border="1">
+			<tr>
+				<td>
+					<p align="center">
+						<font color="red"><b><u>APPLET</u></b></font></br></br>
+						<applet code="Assignment1.class" width="500" height="500"></applet>
+					</p>
+				</td>
+				<td>
+					<p align="center">
+						Layout (BorderLayout):
+						<ul>
+							<li>
+								Border.RIGHT
+								<ul>
+									RightPanel(GridLayout(0,1))
+									<li>option of drawing circle or rectangle</li>
+								</ul>
+							</li>
+							<li>
+								Border.LEFT
+								<ul>
+									ShapePropPanel "properties panel" (GridLayout(4,1)
+									<li>option of coloring in the shape</li>
+								</ul></br>
+								<ul>
+									ColorPanel
+									<li>option of changing colors between foreground and background</li>
+								</ul>
+							</li>
+							<li>
+								Border.CENTER
+								<ul>
+									<li>the Canvas</li>
+								</ul>
+							</li>
+						</ul>
+					</p>
+					<p align="center">Flaws(bugs)</p>
+					<p>
+						<ul>
+							<li>have not implemented logic to draw shape if x1(location pressed) greater than x2(location released) </br>
+								i.e. The program only draws from location of MousePressed</li></br></br>
+							<li>Color saving logic has not been implemented between Foreground and Background change</br>
+								i.e. If you change the color of the foreground then change the color of the background. </br>
+								The background color starts to be edited with the values of the foreground color. and vise versa</li></br></br>
+							<li>Rubberbanding has not been implemented</li>
+						</ul>
+					</p>
+				</td>
+			</tr>
+		</table>
+	</body
+</html>

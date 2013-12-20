@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>2.4 - An Applet With Graphics</title>
+	</head>
+	<body>
+		<p align="center"><font color="red"><b><u>2.4 - An Applet With Graphics</u></b></font></p>
+
+		<p>1) The Graphics class is located in the java.awt package.</p>
+
+		<p>2) Some useful methods used for drawing are:
+			<ul>
+				<li>drawOval(int x, int y, int width, int height);</br>
+					&nbsp;&nbsp;&nbsp;&nbsp;//This Draws the outline of an oval. If we want a filled oval replace "draw" with "fill"</br></br></li>
+				<li>drawPolygon(int[] xPoints, int[] yPoints, int nPoints)</br>
+					&nbsp;&nbsp;&nbsp;&nbsp;//Draws a closed polygon defined by arrays of x and y coordinates. If we want a filled polygon replace "draw" with "fill"</br></br></li>
+				<li>drawString(String str, int x, int y)</br>
+					&nbsp;&nbsp;&nbsp;&nbsp;//Draws the text given by the specified string, using this graphics context's current font and color.</br></br></li>
+				<li>drawLine(int x1, int y1, int x2, int y2)</br>
+					&nbsp;&nbsp;&nbsp;&nbsp;//Draws a line, using the current color, between the points (x1, y1) and (x2, y2) in this graphics context's coordinate system.</br></br></li>
+				<li><a href="http://java.sun.com/javase/7/docs/api/java/awt/Graphics.html">plus many more</a></li>
+		</p>
+		
+		<p align="center">
+			<font color="red"><b><u>APPLET</u></b></font></br></br>
+			<table border="1">
+				<tr>
+					<td align="center">
+						<applet code="Lab2_4.class" width="125" height="150">
+							<param name="number" value="1">
+					</td>
+					<td width="50"></td>
+					<td width="125">
+						<applet code="Lab2_4.class" width="125" height="150">
+							<param name="number" value="2">
+						</applet>
+					</td>
+				</tr>
+			</table>
+		</p>
+	</body>
+</html>
